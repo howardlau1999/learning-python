@@ -120,7 +120,7 @@ class GridWorld(object):
             
 
     def __str__(self):
-        return '\n'.join([''.join(self.grids[row]) for row in range(self.height)])
+        return '\n'.join([''.join(row) for row in self.grids])
 
 def main():
     width = args.width
